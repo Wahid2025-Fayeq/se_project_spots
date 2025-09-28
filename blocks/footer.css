@@ -1,0 +1,7 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Pippins", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
