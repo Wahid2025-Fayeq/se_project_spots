@@ -20,3 +20,4 @@ The way you'll do this at work is by exporting images directly from Figma — we
   
 Good luck and have fun!
 [https://drive.google.com/drive/my-drive](https://drive.google.com/file/d/1pFdKLIjej8Qi84WyfNB-GTFFgdzBpo9M/view?usp=sharing&t=29)
+https://wahid2025-fayeq.github.io/se_project_spots/
