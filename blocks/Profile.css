@@ -3,8 +3,6 @@
   padding: 34px 0 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
   max-width: 1280px;
-  height: 210px;
-  margin: 34px 80px;
 }
 .profile__avatar {
   height: 190px;
@@ -23,6 +21,9 @@
   margin: 0 0 12px;
   font-size: 32px;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   max-width: 420px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -32,6 +33,9 @@
 .profile__description {
   margin: 0;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   max-width: 420px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -41,19 +45,26 @@
 
 .profile__edit-button {
   margin: auto 0 0;
+  display: flex;
+  border: none;
+  background-color: transparent;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #212121;
+  padding: 0;
+  opacity: 0.7;
   cursor: pointer;
+  gap: 8px;
 }
 .profile__edit-button:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .profile__add-button {
   margin: auto 0 0 auto;
   padding: 18px 23px;
+  border: none;
   gap: 8px;
   width: 149px;
   height: 52px;
@@ -67,12 +78,11 @@
   align-items: center;
 }
 .profile__add-button:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 627px) {
   .profile {
-    display: flex;
     flex-direction: column;
     max-width: 288px;
     align-items: center;

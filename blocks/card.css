@@ -4,16 +4,24 @@
 .card__image {
   height: 413px;
   width: 100%;
+  margin-top: 12px;
   object-fit: cover;
   display: block;
   border-radius: 8px;
+}
+.card__title {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
 }
 
 .card__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Pippins", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #212121;
@@ -26,6 +34,9 @@
   background-color: transparent;
   opacity: 40%;
   cursor: pointer;
+}
+.card__link-button:hover {
+  background-color: #212121;
 }
 
 @media screen and (max-width: 627px) {

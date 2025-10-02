@@ -1,7 +1,8 @@
-.footer {
+.footer__copyright {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  font-family: "Pippins", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
