@@ -28,6 +28,6 @@ The way you'll do this at work is by exporting images directly from Figma — we
 
 ## Deployment:
 
-This webpage is deployed to the GitHub pages
+This webpage is deployed to GitHub pages
 
-. Deployment Link: (https://drive.google.com/file/d/1pFdKLIjej8Qi84WyfNB-GTFFgdzBpo9M/view?usp=sharing&t=29)
+. Deploymen Link: (https://drive.google.com/file/d/1pFdKLIjej8Qi84WyfNB-GTFFgdzBpo9M/view?usp=sharing&t=29)
