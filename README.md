@@ -30,6 +30,6 @@ The way you'll do this at work is by exporting images directly from Figma — we
 
 This webpage is deployed to GitHub pages
 
-. Deploymen Link: (https://drive.google.com/file/d/1pFdKLIjej8Qi84WyfNB-GTFFgdzBpo9M/view?usp=sharing&t=29)
+. Deploymen Link: https://wahid2025-fayeq.github.io/se_project_spots/
 
 . Video Link: https://drive.google.com/file/d/1pFdKLIjej8Qi84WyfNB-GTFFgdzBpo9M/view?usp=sharing
