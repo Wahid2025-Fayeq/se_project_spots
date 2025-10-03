@@ -4,7 +4,6 @@
 .card__image {
   height: 413px;
   width: 100%;
-  margin-top: 12px;
   object-fit: cover;
   display: block;
   border-radius: 8px;
@@ -12,15 +11,20 @@
 .card__title {
   margin: 0;
   font-size: 20px;
+  text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+max-width: 353px
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-style: Medium;
+  line-height: 1.2;
 }
 
 .card__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 12px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -36,11 +40,15 @@
   cursor: pointer;
 }
 .card__link-button:hover {
-  background-color: #212121;
+ opacity: 1;
 }
 
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
+  }
+  .card__title {
+    max-width: 250px;
+    font-size: 16px;
   }
 }

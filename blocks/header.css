@@ -3,10 +3,9 @@
   padding: 10px 0;
   display: flex;
   justify-content: center;
-  font-weight: 673;
 }
 
 .header__logo {
-  width: 76px;
+  width: 94px;
   height: 26px;
 }
