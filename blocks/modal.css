@@ -19,6 +19,7 @@
   transition-delay: 0s;
 }
 .modal__container {
+  box-sizing: border-box;
   max-width: 730px;
   width: 100%;
   border-radius: 8px;
@@ -28,12 +29,20 @@
 }
 
 .modal__close-button {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../images/Union.svg);
+  cursor: pointer;
+  padding: 0;
   position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
   top: 32px;
   right: 50px;
   width: 40px;
   height: 40px;
-  border: 2px;
+  border: none;
 }
 .modal__title {
   margin: 0 0 32px;
@@ -48,7 +57,8 @@
 .modal__form {
   display: flex;
   flex-direction: column;
-  width: 630px;
+  max-width: 630px;
+  width: 100%;
 }
 
 .modal__label {
@@ -59,6 +69,11 @@
   line-height: 1.1;
 }
 .modal__input {
+  border: 1px solid rgba(33, 33, 33, 0.4);
+  border-radius: 8px;
+  padding: 16px 12px;
+  box-sizing: border-box;
+  color: #212121;
   display: block;
   margin: 8px 0 0;
   width: 100%;
@@ -66,8 +81,6 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  color: #2121214d;
-  opacity: 0.3;
 }
 .modal__input::placeholder {
   color: #2121214d;
@@ -83,6 +96,10 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
+  cursor: pointer;
+}
+.modal__submit-button:hover {
+  opacity: 0.85;
 }
 @media screen and (max-width: 627px) {
   .modal {

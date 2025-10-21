@@ -23,7 +23,6 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   max-width: 420px;
@@ -71,7 +70,7 @@
   padding: 18px 23px;
   border: none;
   gap: 8px;
-  width: 149px;
+  width: 157px;
   height: 52px;
   border-radius: 8px;
   background-color: #212121;
