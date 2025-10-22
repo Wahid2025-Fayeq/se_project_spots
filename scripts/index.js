@@ -3,18 +3,19 @@ const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileCloseButton = editProfileModal.querySelector(
   ".modal__close-button"
 );
-const editPrifileForm = editProfileModal.querySelector(".modal__form");
+const editProfileForm = editProfileModal.querySelector(".modal__form");
 const editProfileNameInput = editProfileModal.querySelector(
   "#profile-name-input"
 );
 const editProfileDescriptionInput = editProfileModal.querySelector(
   "#profile-description-input"
 );
+const newPostModal = document.querySelector("#new-post-modal");
 const addCardFormEl = newPostModal.querySelector(".modal__form");
 const newPostCaptionInput = newPostModal.querySelector("#card-caption-input");
 const newPostImageInput = newPostModal.querySelector("#card-image-input");
 const newPostButton = document.querySelector(".profile__add-button");
-const newPostModal = document.querySelector("#new-post-modal");
+
 const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
@@ -22,7 +23,7 @@ const profileDescriptionEl = document.querySelector(".profile__description");
 editProfileButton.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
-  openModal(editProfileModal);
+  editProfileModal.classList.add("modal_is-opened");
 });
 editProfileCloseButton.addEventListener("click", function () {
   editProfileModal.classList.remove("modal_is-opened");
@@ -39,7 +40,7 @@ function handleEditProfileSubmit(evt) {
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
   editProfileModal.classList.remove("modal_is-opened");
 }
-editPrifileForm.addEventListener("submit", handleEditProfileSubmit);
+editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
