@@ -32,9 +32,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url(../images/Group\27.svg);
+  background-image: url(../images/Group27.svg);
   cursor: pointer;
   padding: 0;
+  background-color: transparent;
   position: absolute;
   -webkit-appearance: none;
   appearance: none;
@@ -44,9 +45,11 @@
   height: 40px;
   border: none;
 }
+.modal__close-button:hover {
+  opacity: 0.4;
+}
 .modal__title {
   margin: 0 0 32px;
-  width: 169px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 32px;
@@ -90,6 +93,7 @@
   background-color: #212121;
   padding: 18px 32px;
   border-radius: 8px;
+  border: none;
   gap: 8px;
   color: #fcf5e5;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -108,7 +112,23 @@
     padding: 12px;
   }
   .modal__container {
-    padding: 10px;
-    border-radius: 8px;
+    padding: 22px 12px 12px;
+  }
+  .modal__form {
+    margin-top: 34px;
+  }
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal__close-button {
+    top: 22px;
+    right: 12px;
+  }
+  .modal__input {
+    font-size: 16px;
+  }
+  .modal__submit-button {
+    max-width: none;
   }
 }
