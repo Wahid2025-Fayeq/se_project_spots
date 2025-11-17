@@ -1,5 +1,6 @@
 .card {
   max-width: 413px;
+  position: relative;
 }
 .card__image {
   height: 413px;
@@ -7,6 +8,20 @@
   object-fit: cover;
   display: block;
   border-radius: 8px;
+}
+
+.card__delete-button {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-image: url(../images/State=Hover.svg);
+  background-color: transparent;
+  border: none;
+}
+.card__delete-button:hover {
+  opacity: 0.4;
 }
 .card__title {
   margin: 0;
@@ -39,8 +54,17 @@
   opacity: 40%;
   cursor: pointer;
 }
+
 .card__link-button:hover {
   opacity: 1;
+}
+
+.card__link-button_active {
+  background-image: url(../images/like-active.svg);
+  opacity: 1;
+}
+.card__link-button_active:hover {
+  opacity: 0.4;
 }
 
 @media screen and (max-width: 627px) {
