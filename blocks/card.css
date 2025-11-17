@@ -8,6 +8,11 @@
   object-fit: cover;
   display: block;
   border-radius: 8px;
+  cursor: pointer;
+}
+
+.card__image:hover {
+  opacity: 0.8;
 }
 
 .card__delete-button {
@@ -19,6 +24,7 @@
   background-image: url(../images/State=Hover.svg);
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .card__delete-button:hover {
   opacity: 0.4;
@@ -51,8 +57,9 @@
   height: 20px;
   border: none;
   background-color: transparent;
-  opacity: 40%;
+  opacity: 0.4;
   cursor: pointer;
+  background-repeat: no-repeat;
 }
 
 .card__link-button:hover {

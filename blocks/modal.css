@@ -49,7 +49,7 @@
   border: none;
 }
 
-.modal__close_type_preview {
+.modal__close-button_type_preview {
   top: 0;
   right: -52.5px;
   background-image: url(../images/close.svg);
@@ -57,7 +57,7 @@
   cursor: pointer;
 }
 
-.modal__close_type_preview:hover {
+.modal__close-button_type_preview:hover {
   opacity: 0.4;
 }
 .modal__close-button:hover {
@@ -132,8 +132,9 @@
 }
 
 .modal__caption {
+  position: absolute;
+  left: 0;
   color: #ffffff;
-  width: 198px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -141,7 +142,7 @@
   background-color: #212121;
   border: none;
   border-radius: 8px;
-  padding: 4px, 8px;
+  padding: 4px 8px;
 }
 .modal__submit-button:hover {
   opacity: 0.85;
@@ -152,6 +153,9 @@
     flex-direction: column;
     align-items: center;
     padding: 12px;
+  }
+  .modal__caption {
+    font-size: 16px;
   }
   .modal__container {
     padding: 22px 12px 12px;
