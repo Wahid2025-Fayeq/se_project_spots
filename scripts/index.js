@@ -133,7 +133,7 @@ addCardFormEl.addEventListener("submit", function (evt) {
     link: newPostImageInput.value,
   };
   const cardElement = getCardElement(cardData);
-  cardsList.append(cardElement);
+  cardsList.prepend(cardElement);
   addCardFormEl.reset();
   closeModal(newPostModal);
 });
