@@ -32,4 +32,12 @@ This webpage is deployed to GitHub pages
 
 . Deploymen Link: https://wahid2025-fayeq.github.io/se_project_spots/
 
-. Video Link: https://drive.google.com/file/d/1pFdKLIjej8Qi84WyfNB-GTFFgdzBpo9M/view?usp=sharing
+## Project Pitch Videos
+
+Check out these videos, where I describe my project
+and some challenges I faced while building it:
+
+
+
+. Project Pitch Spots Satge6: https://drive.google.com/file/d/1pFdKLIjej8Qi84WyfNB-GTFFgdzBpo9M/view?usp=sharing
+. Project Pitch Spots Stage9: https://drive.google.com/file/d/1T5rLM-wUI7s3YzJarYCrG-RhWoCDBgZz/view?usp=sharing 

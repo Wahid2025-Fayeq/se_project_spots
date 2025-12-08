@@ -110,13 +110,13 @@
   border: 1px solid #ff000099;
 }
 
-.modal__error {
+.modal__error_visible {
   display: block;
   margin-top: 8px;
   color: #ff0000b2;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
-  width: 630px;
+  max-width: 630px;
 }
 .modal__submit-button {
   max-width: 156px;
@@ -171,6 +171,13 @@
 }
 
 @media screen and (max-width: 627px) {
+  .modal__close-button_type_preview {
+    top: -48px;
+    right: 0;
+  }
+  .modal__image {
+    max-width: unset;
+  }
   .modal {
     flex-direction: column;
     align-items: center;
@@ -198,14 +205,5 @@
   }
   .modal__submit-button {
     max-width: none;
-  }
-}
-@media screen and (max-width: 627px) {
-  .modal__close-button_type_preview {
-    top: -48px;
-    right: 0;
-  }
-  .modal__image {
-    max-width: unset;
   }
 }

@@ -4,7 +4,7 @@ const settings = {
   submitButtonSelector: ".modal__submit-button",
   inactiveButtonClass: "modal__submit-button_disabled",
   inputErrorClass: "modal__input_type_error",
-  errorClass: "modal__error",
+  errorClass: "modal__error_visible",
 };
 
 const showInputError = (formEl, inputEl, config) => {
