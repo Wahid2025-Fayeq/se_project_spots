@@ -1,3 +1,10 @@
+import "./index.css";
+import {
+  enableValidation,
+  validationConfig,
+  disableButton,
+} from "../scripts/validation";
+
 const initialCards = [
   {
     name: "Golden Gate Bridge",
@@ -154,7 +161,7 @@ addCardFormEl.addEventListener("submit", function (evt) {
   const cardElement = getCardElement(cardData);
   cardsList.prepend(cardElement);
   addCardFormEl.reset();
-  disableButton(cardSubmitButton, settings);
+  disableButton(cardSubmitButton, validationConfig);
   closeModal(newPostModal);
 });
 
@@ -162,3 +169,4 @@ initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.prepend(cardElement);
 });
+enableValidation(validationConfig);
