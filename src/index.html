@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,13 +20,27 @@
       </header>
       <main class="content">
         <section class="profile page__section">
-          <img
-            src="./images/avatar.jpg"
-            alt="Bessie Coleman"
-            class="profile__avatar"
-          />
+          <div class="profile__avatar-container">
+            <img
+              src="./images/avatar.jpg"
+              alt="Bessie Coleman"
+              class="profile__avatar"
+            />
+            <button
+              type="button"
+              class="profile__avatar-button"
+              aria-label="Edit avatar"
+            >
+              <img
+                src="./images/pencil-avatar.svg"
+                alt=""
+                class="profile__pencil-icon"
+              />
+            </button>
+          </div>
+
           <div class="profile__column">
-            <h1 class="profile__name">Bessie Coleman11</h1>
+            <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-button">
               <img src="./images/pencil.svg" alt="Pencil Icon" />Edit Profile
@@ -36,6 +50,7 @@
             <img src="./images/plus.svg" alt="Plus Icon" />New Post
           </button>
         </section>
+
         <section class="cards">
           <ul class="cards__list">
             <template id="card-template">
@@ -55,9 +70,11 @@
           </ul>
         </section>
       </main>
+
       <footer class="footer">
         <p class="footer__copyright">2025 &copy; Spots</p>
       </footer>
+
       <div class="modal" id="edit-profile-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-button"></button>
@@ -96,6 +113,7 @@
           </form>
         </div>
       </div>
+
       <div class="modal" id="new-post-modal">
         <div class="modal__container">
           <button type="button" class="modal__close-button"></button>
@@ -123,10 +141,50 @@
                 maxlength="30"
                 required
               />
-              <span
-                id="card-caption-input-error"
-                class="modal__error_visible"
-              ></span>
+
+              <span id="card-caption-input-error" class="modal__error"></span>
+            </label>
+            <button type="submit" class="modal__submit-button">Save</button>
+          </form>
+        </div>
+      </div>
+
+      <
+      <div class="modal" id="delete-card-modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-button"></button>
+
+          <h2 class="modal__title">Are you sure?</h2>
+
+          <form class="modal__form">
+            <button type="submit" class="modal__submit-button">delete</button>
+
+            <button
+              type="button"
+              class="modal__button-cancel"
+              id="delete-cancel-button"
+            >
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal" id="avatar-modal">
+        <div class="modal__container">
+          <button type="button" class="modal__close-button"></button>
+          <h2 class="modal__title">Change profile picture</h2>
+          <form class="modal__form" novalidate>
+            <label for="avatar-link-input" class="modal__label">
+              Avatar link
+              <input
+                id="avatar-link-input"
+                type="url"
+                class="modal__input"
+                placeholder="Paste a link to the new avatar"
+                required
+              />
+              <span id="avatar-link-input-error" class="modal__error"></span>
             </label>
             <button type="submit" class="modal__submit-button">Save</button>
           </form>
