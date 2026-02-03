@@ -41,3 +41,4 @@ and some challenges I faced while building it:
 
 . Project Pitch Spots Satge6: https://drive.google.com/file/d/1pFdKLIjej8Qi84WyfNB-GTFFgdzBpo9M/view?usp=sharing
 . Project Pitch Spots Stage9: https://drive.google.com/file/d/1T5rLM-wUI7s3YzJarYCrG-RhWoCDBgZz/view?usp=sharing 
+.Project Pitch Spots final stage:https://www.loom.com/share/3b5ffed0bcf04d94a987f493ec491fdc

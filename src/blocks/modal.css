@@ -11,7 +11,9 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  transition:
+    visibility 0s linear 0.5s,
+    opacity 0.5s linear;
 }
 .modal_type_preview {
   padding: 0 16px;
@@ -168,6 +170,98 @@
 }
 .modal__submit-button:hover {
   opacity: 0.85;
+}
+/* --- DELETE MODAL BASE STYLES --- */
+
+#delete-card-modal .modal__container {
+  padding: 32px;
+  max-width: 630px;
+  max-height: 172px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#delete-card-modal .modal__title {
+  font-size: 24px;
+  width: 590px;
+  height: 24px;
+  font-weight: 600;
+  margin: 0 0 24px;
+  text-align: center;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* Form layout */
+#delete-card-modal .modal__form {
+  display: flex;
+  flex-direction: row !important; /* force row layout */
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+}
+
+/* Primary button (Yes, delete) */
+#delete-card-modal .modal__submit-button {
+  padding: 14px 0;
+  border: none;
+  width: 156px;
+  height: 52px;
+  border-radius: 8px;
+  background-color: #ff3333;
+  color: white;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+#delete-card-modal .modal__submit-button:hover {
+  opacity: 1;
+}
+/* Cancel button (secondary) */
+#delete-card-modal .modal__button-cancel {
+  padding: 14px 0;
+  border: none;
+  width: 156px;
+  height: 52px;
+  border-radius: 8px;
+  background-color: #212121;
+  color: white;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+#delete-card-modal .modal__button-cancel:hover {
+  opacity: 1;
+}
+/* Close button outside for delete modal */
+#delete-card-modal .modal__close-button {
+  position: absolute;
+  top: 0;
+  right: -52px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/Group27.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+#delete-card-modal .modal__close-button:hover {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 627px) {
