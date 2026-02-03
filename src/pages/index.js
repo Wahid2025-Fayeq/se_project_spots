@@ -321,8 +321,6 @@ editProfileCloseButton.addEventListener("click", () => {
 
 // Open new post
 newPostButton.addEventListener("click", () => {
-  addCardFormEl.reset();
-  disableButton(cardSubmitButton, validationConfig);
   openModal(newPostModal);
 });
 
@@ -334,8 +332,6 @@ newPostCloseButton.addEventListener("click", () => {
 // Open avatar modal from avatar button
 if (avatarEditButton && avatarModal && avatarForm && avatarSubmitButton) {
   avatarEditButton.addEventListener("click", () => {
-    avatarForm.reset();
-    disableButton(avatarSubmitButton, validationConfig);
     openModal(avatarModal);
   });
 }
